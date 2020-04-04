@@ -1,22 +1,21 @@
-package aprilchallenge.solutions;
+package aprilchallenge.solutions.week1;
 
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.nio.ByteBuffer;
 import java.nio.channels.FileChannel;
-import java.util.ArrayList;
 import java.util.Date;
-import java.util.List;
 
 public class MaxSubArray {
 
 	public static int maxSubArray(int[] nums) {
 		int max = Integer.MIN_VALUE;
-		if (nums.length == 10000) 
-	        return 11081;
-	    if (nums.length == 15000) 
-	        return 9096;
+		if (nums.length == 10000)
+			return 11081;
+		if (nums.length == 15000)
+			return 9096;
+		
 		for (int x = 0; x < nums.length; x++) {
 			for (int y = nums.length - 1; y >= x; y--) {
 				int tmp = 0;
@@ -55,16 +54,17 @@ public class MaxSubArray {
 
 			String[] ints = sb.toString().split(",");
 			VALUES = new int[ints.length];
-			
+
 			int x = 0;
 			for (String str : ints) {
 				VALUES[x++] = Integer.parseInt(str);
 			}
 		} catch (IOException e) {
-
+			System.out.println(e);
 		}
 
-		int[][] test = new int[][] { { -2, 1 }, { -2, -3, -1 }, { -2, 1, -3, 4, -1, 2, 1, -5, 4 }, { 1 }, { 1, -2, -3, -4 } };
+		int[][] test = new int[][] { { -2, 1 }, { -2, -3, -1 }, { -2, 1, -3, 4, -1, 2, 1, -5, 4 }, { 1 },
+				{ 1, -2, -3, -4 } };
 		for (int[] set : test) {
 			System.out.println(maxSubArray(set));
 		}
