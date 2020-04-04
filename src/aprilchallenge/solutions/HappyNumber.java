@@ -1,4 +1,4 @@
-package solutions;
+package aprilchallenge.solutions;
 
 /**
  * Day 2 challenge:

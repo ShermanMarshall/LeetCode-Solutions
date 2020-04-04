@@ -1,4 +1,4 @@
-package solutions;
+package aprilchallenge.solutions;
 
 import java.util.HashMap;
 import java.util.Map;
