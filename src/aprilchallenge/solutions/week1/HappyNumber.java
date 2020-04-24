@@ -1,7 +1,7 @@
 package aprilchallenge.solutions.week1;
 
 /**
- * Day 2 challenge:
+ * @day 2
  * 
  * Write an algorithm to determine if a number is "happy".
  * 

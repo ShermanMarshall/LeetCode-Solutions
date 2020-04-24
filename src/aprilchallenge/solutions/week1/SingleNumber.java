@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Day 1 challenge:
+ * @day 1
  * 
  * Given a non-empty array of integers, every element appears twice except for one. Find that single one.
  * Note:
@@ -19,7 +19,6 @@ import java.util.Map;
  * 			Output: 4
  * 
  * @author shermanmarshall
- *
  */
 public class SingleNumber {
 
