@@ -62,7 +62,7 @@ public class CheckArrayFormationThroughConcatenation {
 			for (int x = 0; x < pieces.length; x++) {
 				int counter = arrIdx;
 				currentPiece = pieces[x];
-				for (int i : currentPiece) {
+				for (int i : pieces[x]) {
 					if (arr[counter++] != i) {
 						currentPiece = null;
 						break;
